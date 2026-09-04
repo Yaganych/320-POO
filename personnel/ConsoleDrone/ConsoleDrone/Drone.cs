@@ -27,6 +27,9 @@ namespace ConsoleApp1
             Console.SetCursorPosition(posX, posY);
             Console.ForegroundColor = color;
             Console.Write("x-0-x");
+            Console.SetCursorPosition(posX, posY + 1);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine(battery+"%");
         }
 
         public void StatusChange()
