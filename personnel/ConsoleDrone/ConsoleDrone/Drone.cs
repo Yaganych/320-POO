@@ -12,17 +12,20 @@ namespace ConsoleApp1
         public int posX;
         public int posY;
         public int battery;
+        public ConsoleColor color;
 
-        public Drone(int posX, int posY, int battery)
+        public Drone(int posX, int posY, int battery, ConsoleColor color)
         {
             this.posX = posX;
             this.posY = posY;
             this.battery = battery;
+            this.color = color;
         }
 
         public void ConsoleToShow()
         {
             Console.SetCursorPosition(posX, posY);
+            Console.ForegroundColor = color;
             Console.Write("x-0-x");
         }
 

@@ -3,9 +3,9 @@ Console.CursorVisible = false;
 
 Drone[] drones =
 [
-    new Drone (0,0,50),
-    new Drone (0, 10, 50),
-    new Drone (0, 20, 50),
+    new Drone (0,0,50, ConsoleColor.White),
+    new Drone (0, 10, 50, ConsoleColor.Red),
+    new Drone (0, 20, 50, ConsoleColor.Green),
 ];
 
 while (DroneIsAlive(drones))
@@ -15,7 +15,7 @@ while (DroneIsAlive(drones))
         drone.ConsoleToShow();
         drone.StatusChange();
     }
-    Thread.Sleep(1);
+    Thread.Sleep(200);
     Console.Clear();
 }
 
